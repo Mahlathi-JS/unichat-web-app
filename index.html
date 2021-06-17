@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!--CSS Styling-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<div class="header-background">
+    <div id="nav" class="sticky-nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">UniChat</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-us">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://unichat-app-d575a.web.app/login">Sign In</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <h1 class="heading">Are you a programming student?</h1>
+    <p>Connect with others and share your learning experiences.</p>
+    <div id="btn">
+      <a href="https://unichat-app-d575a.web.app/login" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+
+    <div class="container-fluid" id="about-us">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-6 column-left">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6 column-right">
+          <h1 class="section-title">About Us</h1>
+          <p class="paragraph"> We are a company based in Cape Town called CodeLess, and it was formes in 2021. Since this global pandemic has changed the way of doing things, our aim or vision as Codeless is to provide our proramming students an online platform where
+            they can capture their wotk-based experiences and share these learning experiences with other students through text. The main focus 
+            is to develop a platform that only allows programming students to share their work experiences and projects with other younger students 
+            and more off motivating each other. </p>
+      
+      </div>
+    </div>
+
+</div>   
+
+<div class="container-fluid" id="contact">
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-6 col-lg-6 contact-left">
+       <div class="text-left-block">
+         <div class="left-center-text">
+           <div class="left-center-part">
+             <h2 class="contact-section">Contact Us</h2>
+             <div class="row">
+               <div class="col-xs-12 col-sm-12 col-lg-12">
+                 <form id="contact-form" name="contact-form" data-name="contact-form">
+                   <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" id="name" class="form name" placeholder="Name*" name="name" data-name="Name" required>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="email" name="email" id="email" class="form email" placeholder="Email address*" data-name="Email address" required>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" name="subject" id="subject" class="form subject" placeholder="Subject*" data-name="Subject" required>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-lg-12">
+                      <div class="form-group">
+                        <textarea id="text-aria" class="form message form-control" placeholder="Your message here*" name="meesage" data-name="Text Area" required>
+
+                        </textarea>
+                      </div>
+                      <span class="sub-text">* Required fields</span>
+                    </div>
+                   </div>
+                   <button type="submit" id="valid-form" class="btn btn-color">
+                     Send Message
+                   </button>
+                 </form>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-6 contact-right">
+
+    </div>
+
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
